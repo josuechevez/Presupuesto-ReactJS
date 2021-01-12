@@ -27,7 +27,7 @@ function App() {
     guardarRestante(presupuestoRestante);
     guardarCrearGasto(false);
 
-  }, [gasto]);
+  }, [gasto,creargasto,gastos,restante]);
 
   return (
     <Fragment>
