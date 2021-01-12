@@ -20,12 +20,11 @@ function App() {
         ...gastos,
         gasto
       ]);
+      
+       let presupuestoRestante = restante - gasto.cantidad;
+      guardarRestante(presupuestoRestante);
+      guardarCrearGasto(false);
     }
-
-
-    let presupuestoRestante = restante - gasto.cantidad;
-    guardarRestante(presupuestoRestante);
-    guardarCrearGasto(false);
 
   }, [gasto,creargasto,gastos,restante]);
 
